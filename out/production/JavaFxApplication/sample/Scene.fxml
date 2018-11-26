@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <SplitPane fx:id="mainsceneID" dividerPositions="0.7512562814070352" layoutX="220.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="279.0" prefWidth="598.0">
+               <children>
+                  <SplitPane dividerPositions="0.6778523489932886" layoutX="199.0" layoutY="26.0" prefHeight="271.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: d6d6c2;">
+                           <children>
+                              <AnchorPane fx:id="bA" onMouseClicked="#itemSelection" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #878787;">
+                                 <children>
+                                    <Label blendMode="COLOR_BURN" disable="true" layoutX="54.0" layoutY="43.0" text="A">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="bB" layoutX="136.0" onMouseClicked="#itemSelection" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #878787;">
+                                 <children>
+                                    <Label blendMode="COLOR_BURN" disable="true" layoutX="55.0" layoutY="43.0" text="B">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="bC" layoutX="271.0" onMouseClicked="#itemSelection" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #878787;">
+                                 <children>
+                                    <Label blendMode="COLOR_BURN" disable="true" layoutX="55.0" layoutY="43.0" text="C">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="bD" layoutY="139.0" onMouseClicked="#itemSelection" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #878787;">
+                                 <children>
+                                    <Label blendMode="COLOR_BURN" disable="true" layoutX="55.0" layoutY="43.0" text="D">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="bE" layoutX="136.0" layoutY="139.0" onMouseClicked="#itemSelection" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #878787;">
+                                 <children>
+                                    <Label blendMode="COLOR_BURN" disable="true" layoutX="55.0" layoutY="43.0" text="E">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="bF" layoutX="271.0" layoutY="139.0" onMouseClicked="#itemSelection" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #878787;">
+                                 <children>
+                                    <Label blendMode="COLOR_BURN" disable="true" layoutX="53.0" layoutY="44.0" text="F">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <SplitPane dividerPositions="0.8475177304964538" layoutX="20.0" layoutY="64.0" orientation="VERTICAL" prefHeight="299.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <ListView fx:id="itemList" layoutX="-1.0" layoutY="27.0" prefHeight="253.0" prefWidth="198.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <TextField fx:id="total" layoutX="94.0" layoutY="7.0" prefHeight="25.0" prefWidth="79.0" />
+                                          <Label layoutX="54.0" layoutY="11.0" prefHeight="17.0" prefWidth="40.0" text="Total:" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="96.0" prefWidth="598.0" style="-fx-background-color: d6d6c2;">
+               <children>
+                  <AnchorPane fx:id="edit" layoutX="206.0" layoutY="4.0" onMouseClicked="#itemEdit" prefHeight="83.0" prefWidth="187.0" style="-fx-background-color: #878787;">
+                     <children>
+                        <Label blendMode="COLOR_BURN" disable="true" layoutX="25.0" layoutY="7.0" onMouseClicked="#itemEdit" prefHeight="83.0" prefWidth="187.0" style="-fx-alignment: center;" text="EDIT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="delete" layoutX="7.0" layoutY="4.0" onMouseClicked="#itemDelete" prefHeight="83.0" prefWidth="187.0" style="-fx-background-color: #878787;">
+                     <children>
+                        <Label blendMode="COLOR_BURN" disable="true" layoutX="6.0" onMouseClicked="#itemEdit" prefHeight="83.0" prefWidth="187.0" style="-fx-alignment: center;" text="DELETE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="403.0" layoutY="4.0" onMouseClicked="#transactionFinalize" prefHeight="83.0" prefWidth="187.0" style="-fx-background-color: #878787;">
+                     <children>
+                        <Label blendMode="COLOR_BURN" disable="true" layoutX="13.0" layoutY="8.0" prefHeight="83.0" prefWidth="187.0" style="-fx-alignment: center;" text="CONFIRM" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <AnchorPane fx:id="modsID" layoutY="7.0" prefHeight="370.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane opacity="0.6" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="500.0">
+               <children>
+                  <SplitPane dividerPositions="0.6515151515151515" layoutX="220.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Spinner fx:id="amntSpinner" layoutX="396.0" layoutY="48.0" prefHeight="30.0" prefWidth="88.0" />
+                              <Label layoutX="339.0" layoutY="48.0" prefHeight="30.0" prefWidth="57.0" style="-fx-alignment: center;" text="Amount">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="164.0" prefHeight="126.0" prefWidth="175.0" style="-fx-background-color: gray;">
+                                 <children>
+                                    <CheckBox fx:id="isX" alignment="CENTER" layoutX="52.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="ModX" />
+                                    <CheckBox fx:id="isY" alignment="CENTER" layoutX="52.0" layoutY="63.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="ModY" />
+                                 </children>
+                              </AnchorPane>
+                              <Label fx:id="modLabel" layoutX="61.0" layoutY="48.0" prefHeight="30.0" prefWidth="57.0" style="-fx-alignment: center;" text="Label" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <AnchorPane fx:id="modsAccept" layoutX="261.0" layoutY="18.0" onMouseClicked="#modsAccept" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: green;">
+                                 <children>
+                                    <Label layoutX="42.0" layoutY="4.0" text="CONFIRM">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children></AnchorPane>
+                              <AnchorPane layoutX="91.0" layoutY="18.0" onMouseClicked="#modsCancel" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: red;">
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="4.0" prefHeight="17.0" prefWidth="57.0" style="-fx-alignment: CENTER;" text="CANCEL">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children></AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
